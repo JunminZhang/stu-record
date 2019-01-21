@@ -17,7 +17,9 @@ public class InterruptDemo {
             System.out.println(i);
         },"interruptDemo");
         thread.start();
+        //主线程睡眠一秒
         TimeUnit.SECONDS.sleep(1);
+        //System.out.println(thread.isInterrupted());
         thread.interrupt(); //设置interrupt标识为true
         System.out.println(thread.isInterrupted());
     }
