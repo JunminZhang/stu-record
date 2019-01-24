@@ -32,7 +32,6 @@ public class ThreadStatusDemo {
 
         new Thread(new BlockDemo(),"BlockDemo-0").start();
         new Thread(new BlockDemo(),"BlockDemo-1").start();
-
     }
 
     static class BlockDemo extends Thread{
