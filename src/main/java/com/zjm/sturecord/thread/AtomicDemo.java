@@ -6,7 +6,7 @@ package com.zjm.sturecord.thread;
 public class AtomicDemo {
     private static int count = 0;
 
-    public static void inc(){
+    public static synchronized void inc(){
         try {
             Thread.sleep(1);
         } catch (InterruptedException e) {
